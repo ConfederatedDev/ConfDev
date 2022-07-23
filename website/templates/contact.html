@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %} 
+
+
+{% block content %}
+<div style="text-align: center;">
+    <h2 >
+    Contact
+    </h2>
+    
+    <br>
+    
+    <form  method="POST">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="John Q. Public">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="John.Q.Public@gmail.com">
+        <label for="subject">Subject:</label>
+        <input type="text" maxlength="255 " class="form-control" name="subject" id="subject" aria-describedby="subject" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+        <label for="message">Email:</label>
+        <textarea type="text" class="form-control" rows="5" name="message" id="message" aria-describedby="message" placeholder="Donec non nibh nec urna fermentum sagittis. Pellentesque posuere tortor eu eros vestibulum, vitae dignissim tellus porttitor. Vivamus placerat tortor dui, a dapibus dui blandit id. Suspendisse tristique nisl vitae ex porta blandit. Duis sem mauris, cursus in rhoncus a, ultrices ac massa. Suspendisse potenti. Proin in enim porttitor ante posuere pharetra. Proin orci ipsum, auctor et blandit in, fermentum sed libero. Donec ut est sem. Duis sed placerat tortor. Morbi aliquet massa ac sem auctor, ornare luctus turpis tempor."></textarea>
+        <label for="BotCheck">Bot Check: What is 16+4</label>
+        <input type="number" class="form-control" name="BotCheck" id="BotCheck" aria-describedby="BotCheck" placeholder="12">
+        <button disabled type="submit" class="btn btn-primary" style="text-align: center;">Submit - Not yet activated</button>
+    
+    
+        </div>
+    
+    
+    </form>
+    
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Hello World{% endblock %} 
+
+{% block content %}
+<br>
+<h2>So what is this?</h2>
+
+<p>I have a lot of ideas for things. Problem is I never end up realizing them. This is my attempt at fixing that. </p>
+
+<p>Inspired by Ben Stokes **link** I've decided to commit to turning one idea into reality per month for the rest of 2022. That's 6 projects, and this is the first. It's simple website built with Flask, bootstrap, and thats about it to get more comfortable with hosting my own projects. It's decidedly not high tech.</p>
+
+<p>Just because something isn't high tech, doesnt mean it is sumple, at least for a person doing it for the first time. There are a lot of websites out there, and a lot of differnt ways of constructing them, and a plethora of choices that need to be made. Here are the choices I made and why, maybe you'll find it usefull if you're trying to create your own website</p>
+<ul>
+<li>Backend - Flask - I feel most comfortable programing in Python and there are a lot of web frameworks that one can use, but the two that seemed most common to me were Django and Flask. I chose flask because it seemed more flexable in case I want to create a web app as a future projects, but TBH Django would have probably served me just as well.</li>
+<li>Frontend - Bootstrap - I've done some pure HTML + CSS + JS codeing in the past. It was not fun. A front end framework takes a lot of the pain away from making your website look like its was written after 2005. (Note I did consider going full hostile and having my entire style be a black background with left jsutified white text.) Bootstrap and Tailwinds are two common frontend frameworks and I mostly chose bootstrap as the Flask tutorial I was following alos used it.</li>
+<li>Hosting - DigitalOcean - I've used Bluehost (and even just github pages) to host static websties in the past. It's fine, but I wanted to explore cloud infastructure. The four most popular cloud infastructure comapnies are (in order of amrket share) AWS, Azure, Google cloud services, and Digital Ocean. I went with Digital Ocean as it seemed the most new-user friendly. Yea, I know that setting up such a small website this way is overkill, but again, it's to serve as an introduction to cloud hosting if I want to use it for a future project.</li>
+<li>Email - Google workspace - I wanted a custom domain email, I didn't want to host my own email server (for a project where a lot of my choices are doing it the hard way to learn new skills, drawing the line at my own email server is a weird line, but I couldnt think of anything I would want to do less than having to deal with a custom email server).</li>
+<li>Content Distribution -
+    <ul>
+        <li>Email Newsletter - Tinyletter **link** (Honestly, tinyletter is IMO a perfect product)</li>
+        <li>Reddit - r/ConfederatedDev **link** </li>
+        <li>Twitter - @ConfederatedDev **link** </li>
+        <li>Hacker News - @confederated **link** </li>
+        <li>Product Hunt - **?** </li>
+    </ul> 
+</li>
+
+</ul>
+
+
+<p>It's here on this website that I will showcase the differnt projects and post blogs about them. These projects will have no central theme and hence the name of this website, they will be a union of projects united for the pourpose of a common action, tunring more ideas into reality.</p>
+
+<p>I hope it's a fun ride, and I'm happy you're joining me on it.</p>
+
+**TODO Spellcheck**
+
+{% endblock %}
