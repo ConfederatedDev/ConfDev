@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Remove Background{% endblock %} 
+
+{% block content %}
+
+<div class="float-main" name="ID" style="text-align: center;">
+
+    <h1 style="text-align: center;">Background Remover</h1>
+    <br>
+
+    <head>
+        <title>Index</title>
+    </head>
+
+    <img id="picture" src="data:image/jpeg;base64,{{ img_data }}">
+
+    
+    <div class="container">
+        <!--<a href="{{ linkBack }}">-->
+        <a href="/projects/removeBG">
+            <button class="btn btn-primary btn-lg">Remove Another</button>
+        </a>
+    </div>
+
+</div>
+{% endblock %}

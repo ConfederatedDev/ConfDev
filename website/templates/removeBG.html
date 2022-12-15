@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Remove Background{% endblock %} 
+
+{% block content %}
+
+<div class="float-main" name="ID" style="text-align: center;">
+
+    <h1 style="text-align: center;">Background Remover</h1>
+    <p>This tool uses a nerual network to detemrine the subject of the photo and then remove the background.</p>
+    <p>Only .png, .jpg, and .jpeg are supported</p>
+    <br>
+
+    <h4>Upload an image</h4>
+    
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+
+</div>
+{% endblock %}
