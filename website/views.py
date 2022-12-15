@@ -42,7 +42,8 @@ def removeBG():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             
-            file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+            #file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+            file.save(os.path.join("imageHolder", filename))
             im = Image.open(file)
             output = remove(im)#.convert('RGB')
             data = io.BytesIO()
