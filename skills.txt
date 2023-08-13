@@ -1,2 +1,0 @@
-Flask/Tailwinds
-CMS (for the blog)
